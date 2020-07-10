@@ -60,14 +60,6 @@ class Covid19:
             days.append(str(t1-t2.date())[0:4])
         return days
 
-    def write_to_csv(self, data):
-        """Writes data to a csv file"""
-        with open("out.csv", "w", newline="") as f:
-            writer = csv.writer(f)
-            writer.writerow(self.column_names)
-            writer.writerows(data)
-            print(" Updated succesfully ")
-
     def update_list(self, data, days):
         """Appends no_of_days_since_first_confirmed_case to data"""
         j = 0
@@ -76,16 +68,23 @@ class Covid19:
             j+=1
         return data
 
+    def write_to_csv(self, data):
+        """Writes data to a csv file"""
+        with open("out.csv", "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(self.column_names)
+            writer.writerows(data)
+            print(" Updated succesfully ")
+
 
 if __name__ == "__main__":
 
     CONFIG = cp.config_parser('config.ini')
 
     obj = Covid19(CONFIG)
-
     countries = obj.get_summary()
     data, slug_ls = obj.get_details(countries)
-    no_of_days = obj.get_no_of_days(slug_ls)
-    updated_data = obj.update_list(data, no_of_days)
-    obj.write_to_csv(updated_data)
+    # no_of_days = obj.get_no_of_days(slug_ls)
+    # updated_data = obj.update_list(data, no_of_days)
+    obj.write_to_csv(data)
     
