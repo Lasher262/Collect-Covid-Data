@@ -19,6 +19,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+    - name: Install requests
+      run: |
+        pip install requests
     - name: Run py
       run: |
         python store_covid_data.py
