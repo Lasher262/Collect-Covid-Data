@@ -1,5 +1,5 @@
 Date,Country,TotalConfirmed,TotalActiveCases,TotalDeaths,TotalRecovered
-2020-08-31,Afghanistan,38162,7671,1402,29089
+2020-08-31,Afghanistan,38162,7671,1402,290891
 2020-08-31,Albania,9380,3961,280,5139
 2020-08-31,Algeria,44146,11667,1501,30978
 2020-08-31,Andorra,1124,169,53,902
@@ -44,7 +44,7 @@ Date,Country,TotalConfirmed,TotalActiveCases,TotalDeaths,TotalRecovered
 2020-08-31,Cuba,3973,552,94,3327
 2020-08-31,Cyprus,1487,532,20,935
 2020-08-31,Czech Republic,24367,6397,423,17547
-2020-08-31,Côte d'Ivoire,17948,1280,115,16553
+2020-08-31,Cï¿½te d'Ivoire,17948,1280,115,16553
 2020-08-31,Denmark,17316,1200,624,15492
 2020-08-31,Djibouti,5385,6,60,5319
 2020-08-31,Dominica,20,2,0,18
