@@ -22,6 +22,7 @@ jobs:
     - name: Install requests
       run: |
         pip install requests
+        pip install snowflake
     - name: Run py
       run: |
         python store_covid_data.py
